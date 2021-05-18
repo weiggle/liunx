@@ -1,0 +1,2 @@
+# liunx
+linux commad learn
