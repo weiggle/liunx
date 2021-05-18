@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#获取当前Activity
+alias adbtop="adb shell dumpsys window | grep mCurrentFocus"
+#卸载系统应用  adbust pkg
+alias adbust="adb shell pm unistall -k --user"
+#获取错误信息
+alias adbrunexp="adb logcat -v time | grep -i RuntimeException"
+alias adbexp="adb logcat -v time | grep -i exception"
+
+
+
+#git
+alias gaa="git add ."
+alias gck="git checkout"
+alias gst="git status"
+alias gct="git commit"
+alias grb="git rebase"
+alias grba="git rebase --abort"
+alias grac="git rebase --continue"
+alias gf="git fetch"
+alias gp="git push"
+alias gpf="git push -f"
+alias glg="git log"
+alias gtg="git tag"
+alias gdt="git -d tag"
+alias gtp="git push origin"
+alias gsh="git stash"
+alias gshpop="git stash pop"
