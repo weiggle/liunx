@@ -11,7 +11,13 @@ alias adbexp="adb logcat -v time | grep -i exception"
 
 
 #git
+alias g="git"
+alias ga="git add"
 alias gaa="git add ."
+alias gb="git branch"
+alias gbD="git branch -D"
+alias gba="git branch -a"
+alias gbd="git branch -d"
 alias gck="git checkout"
 alias gst="git status"
 alias gct="git commit"
