@@ -11,6 +11,10 @@ alias adbexp="adb logcat -v time | grep -i exception"
 alias adbcdata="adb shell pm clear"
 # 启动activity  adbstart [applicationId/package.Activity]
 alias adbstart="adb shell am start -W"
+alias adbks="adb kill-server"
+alias adbss="adb start-server"
+#显示启动时间
+alias adbdt="adb logcat | grep -i \"Displayed\""
 
 #git
 alias g="git"
