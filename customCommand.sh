@@ -15,6 +15,10 @@ alias adbks="adb kill-server"
 alias adbss="adb start-server"
 #显示启动时间
 alias adbdt="adb logcat | grep -i \"Displayed\""
+#显示内存信息【package name】
+alias meminfo="adb shell dumpsys meminfo"
+#heap信息
+alias heapinfo="adb shell getprop | grep dalvik.vm.heap"
 
 #git
 alias g="git"
