@@ -6,7 +6,7 @@ alias adbtop="adb shell dumpsys window | grep mCurrentFocus"
 alias adbist="adb install"
 alias adbust="adb shell pm unistall -k --user"
 #获取错误信息
-alias adbrunexp="adb logcat -v time | grep -i RuntimeException"
+alias adbrunexp="adb logcat -v time | grep -i runtime"
 alias adbexp="adb logcat -v time | grep -i exception"
 alias adbcdata="adb shell pm clear"
 # 启动activity  adbstart [applicationId/package.Activity]
