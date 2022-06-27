@@ -2,12 +2,14 @@
 
 #获取当前Activity
 alias adbtop="adb shell dumpsys window | grep mCurrentFocus"
+#获取Fragment
+alias adbfragment="adb shell dumpsys activity top | grep  -A 5 -i 'Added Fragment'"
 #卸载系统应用  adbust pkg
 alias adbist="adb install"
 alias adbust="adb shell pm unistall -k --user"
 #获取错误信息
-alias adbrunexp="adb logcat -v time | grep -i runtime"
-alias adbexp="adb logcat -v time | grep -i exception"
+alias adbruntime="adb logcat -v time | grep -i runtime"
+alias adberror="adb logcat -v time | grep -i exception"
 alias adbcdata="adb shell pm clear"
 # 启动activity  adbstart [applicationId/package.Activity]
 alias adbstart="adb shell am start -W"
