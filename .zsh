@@ -1,0 +1,1 @@
+/Users/liwei/.zshrc
