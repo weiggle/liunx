@@ -1,0 +1,22 @@
+编译kotlin
+1. install kotlin
+    ```
+        brew update
+        brew install kotlin
+    ```
+
+2. Create and run an application
+    ```
+        fun main() {
+            println("Hello, World!")
+        }
+    ```
+
+3.Compile the application using the Kotlin compiler:
+
+    kotlinc hello.kt -include-runtime -d hello.jar
+    java -jar hello.jar
+
+or
+    kotlinc hello.kt -d hello.jar
+    kotlin -classpath hello.jar HelloKt
