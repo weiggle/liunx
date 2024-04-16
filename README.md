@@ -32,4 +32,10 @@ linux commad learn
         
      
 ## 使用
+ 在 ～/.zshrc或者~/.bash_profile  添加以下命令，${path}表示脚本文件目录
+ source ${path}/customCommand.sh
+## Q
+ 一般安装了iTerm都会安装oh-my-zsh,会默认带一些git命令的别名，会覆盖本脚本的别名
+ oh-my-zsh的git别名的文件位置在 ～.oh-my-zsh/plugins/git/git.plugin.zsh
+ 可以注释掉相应的别名
 
