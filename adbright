@@ -1,0 +1,16 @@
+#!/bin/bash
+
+s=$(adb shell wm size)
+echo $s
+w=`echo $s | awk -F'[:x]' '{print $2}'`
+h=`echo $s | awk -F'[:x]' '{print $3}'`
+
+echo $w 
+echo $h
+hc=`expr $w / 2`
+vc=`expr $h / 2`
+left=`expr $w / 4`
+right=`expr $w \* 3 / 4`
+echo $hc
+echo $vc
+`adb shell input swipe $left $vc $right $vc`

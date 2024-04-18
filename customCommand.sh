@@ -19,6 +19,25 @@ alias adbss="adb start-server"
 alias adbdt="adb logcat | grep -i \"Displayed\""
 #显示内存信息【package name】
 alias meminfo="adb shell dumpsys meminfo"
+
+#屏幕尺寸
+alias adbsize="adb shell wm size"
+#屏幕像素密度
+alias adbdpi="adb shell wm density"
+#返回上一页
+alias adbback="adb shell input keyevent 4"
+#返回Home
+alias adbhome="adb shell input keyevent 3"
+#音量+
+alias adbvup="adb shell input keyevent KEYCODE_VOLUME_UP"
+#音量-
+alias adbvdown="adb shell input keyevent KEYCODE_VOLUME_DOWN"
+#模拟点击
+alias adbtap="adb shell input tap"
+#截屏
+alias adbcap="adb shell screencap "
+#输入
+alias adbtext="adb shell input text"
 #heap信息
 alias heapinfo="adb shell getprop | grep dalvik.vm.heap"
 
