@@ -1,0 +1,12 @@
+#!/bin/bash
+
+apkPath=$1
+sdkdir=$ANDROID_HOME
+toolsdir=$sdkdir/build-tools/31.0.0
+echo $toolsdir/aapt2
+# packagename=`$toolsdir/aapt2 dump packagename  $1`
+# echo "packagename====> $packagename"
+
+app=`$toolsdir/aapt2 dump badging  $apkPath |  grep package ` 
+echo "appIndo=======>"
+echo $app

@@ -19,6 +19,8 @@ alias adbss="adb start-server"
 alias adbdt="adb logcat | grep -i \"Displayed\""
 #显示内存信息【package name】
 alias meminfo="adb shell dumpsys meminfo"
+#显示android sdk目录
+alias sdkdir="echo $ANDROID_HOME"
 
 #屏幕尺寸
 alias adbsize="adb shell wm size"
